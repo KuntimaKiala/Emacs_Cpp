@@ -1,4 +1,4 @@
-COMPILER= "g++"
+dCOMPILER= "g++"
 PROJECT = runner
 CODE  = main.cpp
 
