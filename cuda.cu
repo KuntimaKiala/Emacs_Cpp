@@ -5,8 +5,8 @@
 
 
 __device__ void func(float val){
-  val = val + val ;
-  printf("%f\n",val) ;
+  val += val ;
+  printf("double 2pi = %f\n",val) ;
 }
 
 __global__ void kernel(const float* pt, const float value){
@@ -20,8 +20,8 @@ int main(void) {
   
   float * pi ;
   cudaMalloc((void **)&pi , sizeof(float)) ;
-  
   kernel<<<1,1>>>(pi, constants::pi);
+  
   cudaFree(pi);
   return 0 ;
 }
