@@ -1,4 +1,3 @@
-#include <iostream>
 #include <stdio.h>
 #include "/home/kuntima/workspace/github/Emacs_Cpp/constant.h"
 #define N 3
