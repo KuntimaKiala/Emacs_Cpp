@@ -5,7 +5,7 @@
 
 __device__ void func(float val){
   val += val ;
-  printf("double 2pi = %f\n",val) ;
+  printf("2pi = %f\n",val) ;
 }
 
 __global__ void kernel(const float* pt, const float value){
