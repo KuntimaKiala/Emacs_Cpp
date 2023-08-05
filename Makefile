@@ -1,6 +1,6 @@
-COMPILER= "g++"
-PROJECT = runner
-CODE  = main.cpp
+COMPILER= "nvcc"
+PROJECT = cuda
+CODE  = cuda.cu
 
 $(PROJECT):$(CODE)
-	$(COMPILER) -Wall $(CODE) -o $(PROJECT) 
+	$(COMPILER) $(CODE) -o $(PROJECT) 
