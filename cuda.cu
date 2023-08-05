@@ -4,7 +4,7 @@
 #define N 3
 
 
-__device__ void func(float val){
+__device__ void printer(float val){
   val = val/2 ;
   printf("pi/2 = %.9f\n",val) ;
 }
@@ -12,7 +12,7 @@ __device__ void func(float val){
 __global__ void kernel(const float* float_ptr, const float value){
   
   float_ptr = &value ;
-  func(*float_ptr) ;
+  printer(*float_ptr) ;
 }
 
 int main(void) {
