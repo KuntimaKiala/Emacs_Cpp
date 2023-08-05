@@ -17,7 +17,6 @@ __global__ void kernel(const float* float_ptr, const float value){
 
 int main(void) {
   
-  
   float * pi ;
   cudaMalloc(&pi , sizeof(float)) ;
   kernel<<<1,1>>>(pi, constants::pi);

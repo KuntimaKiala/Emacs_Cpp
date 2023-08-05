@@ -1,2 +1,2 @@
 # Magit
-Just having fun with magit emacs <br />
+Just having fun with magit and CUDA emacs <br />
